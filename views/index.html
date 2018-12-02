@@ -1,9 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DELI-VERY</title>
+      <link rel="stylesheet" type="text/css" href="/css/style.css">.
+        <title>Burgertown</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
-        <h1>Hello World!!!</h1>
+      <main>
+        <h1> Welcome to Burgertown </h1>
+        <section class="burgerSelection">
+          <h3> Select burger </h3>
+          <p> This is where you execute burger selection </p>
+          <table>
+            <thead>
+              <tr>
+                <th> The fire burger </th>
+                <th> The homeless burger </th>
+                <th> The alien burger </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <img src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300"></td>
+                <td> <img src="https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300"> </td>
+                <td> <img src="https://images.pexels.com/photos/572981/pexels-photo-572981.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300">    </td>
+              </tr>
+              <tr>
+                <td><ul>
+                      <li> 750 kCal </li>
+                      <li> <span id="allergyInfo">Red peppers</span> extracted from the depths of hell </li>
+                      <li> Available as <span id="allergyInfo">Gluten-Free</span> </li>
+                    </ul>
+                </td>
+                <td><ul>
+                      <li> Tastes like chicken </li>
+                      <li> Comes with a free pair of boots </li>
+                      <li> 300 kCal, no <span id="allergyInfo">lactose</span> </li>
+                    </ul>
+                </td>
+                <td><ul>
+                      <li> Comes with crazy space tentacles </li>
+                      <li> All hail Kang, president of the world </li>
+                      <li> Available as <span id="allergyInfo">Gluten-Free</span></li>
+                    </ul>
+                </td>
+            </tbody>
+          </table>
+        </section>
+        <section id="contact">
+          <h3> Customer information </h3>
+          <p> This is where you provide necessary information </p>
+          <form>
+            <p>
+              <label for="FullName">Full Name</label><br>
+              <input type="text" id="FullName" name="FN" required="required" placeholder="First- and Last name">
+            </p>
+            <p>
+              <label for="Email">Email-address</label><br>
+              <input type="email" id="Email" name="EM" placeholder="E-mail address">
+            </p>
+            <p>
+              <label for="Street">Street name</label><br>
+              <input type="text" id="Street" name="ST" required="required" placeholder="Street name">
+            </p>
+            <p>
+              <label for="HouseNo">House</label><br>
+              <input type="text" id="HouseNo" name="HN" required="required" placeholder="House number">
+            </p>
+            <p>
+              <label for="Paymenty">Payment options</label><br>
+              <select id="Payment" name="Ptp">
+                <option>Credit card</option>
+                <option>Paypal</option>
+                <option>Alf Pogs</option>
+                <option>Twitch emotes</option>
+                <option>Naturopathic cryptocurrency</option>
+              </select>
+            </p>
+
+            <h4> Gender info </h4>
+            <p>
+              <input type="radio" name="gender" value="male" checked> Manly man<br>
+              <input type="radio" name="gender" value="female"> Girly girl<br>
+              <input type="radio" name="gender" value="space"> Space creature <br>
+              <input type="radio" name="gender" value="space"> None of the above <br>
+              <input type="radio" name="gender" value="space"> One of the above
+            </p>
+          </form>
+          <br>
+          <button type="submit"><img src="https://naturalsolar.com.au/wp-content/uploads/2016/05/Place-Order-Button-1.png"></button>
+        </section>
+      </main>
+      <footer>
+        <hr>
+        <p> &copy; Moe Szyslak LLC. All rights deserved.
+        </p>
+      </footer>
     </body>
 </html>
