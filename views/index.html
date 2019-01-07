@@ -1,55 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <link rel="stylesheet" type="text/css" href="/css/style.css">.
-        <title>Burgertown</title>
+      <script src="js/js_script.js"></script>
+      <script src="js/vue_script.js"></script>
+      <script src="https://vuejs.org/js/vue.js"></script>
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>Citiburger</title>
         <meta charset="utf-8"/>
     </head>
     <body>
       <main>
-        <h1> Welcome to Burgertown </h1>
-        <section class="burgerView">
-	  <h3> Select burger </h3>
-          <p> This is where you execute burger selection </p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th> The fire burger </th>
-                <th> The homeless burger </th>
-                <th> The alien burger </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td> <img src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300"></td>
-                <td> <img src="https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300"> </td>
-                <td> <img src="https://images.pexels.com/photos/572981/pexels-photo-572981.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300">    </td>
-              </tr>
-              <tr>
-                <td><ul>
-                      <li> 750 kCal </li>
-                      <li> <span id="allergyInfo">Red peppers</span> extracted from the depths of hell </li>
-                      <li> Available as <span id="allergyInfo">Gluten-Free</span> </li>
-                    </ul>
-                </td>
-                <td><ul>
-                      <li> Tastes like chicken </li>
-                      <li> Comes with a free pair of boots </li>
-                      <li> 300 kCal, no <span id="allergyInfo">lactose</span> </li>
-                    </ul>
-                </td>
-                <td><ul>
-                      <li> Comes with crazy space tentacles </li>
-                      <li> All hail Kang, president of the world </li>
-                      <li> Available as <span id="allergyInfo">Gluten-Free</span></li>
-                    </ul>
-                </td>
-            </tbody>
-	    </span>
-          </table>
+        <section class="header">
+          <h1 align="center" id="headLine"> Welcome to Citiburger </h1>
+            <img src = "https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" id="headImage">
+          </span>
         </section>
-        <section id="orderInfo">
-	  <span id="orderInfo">
+        <section class="burgerView">
+	         <h3 align="center"> May I take your order please </h3>
+           <p align="center"> This is where you execute burger selection </p>
+           <div class="wrapper">
+            <div class="a" align="center">The fire burger </div>
+            <div class="d" align="center">   The homeless burger </div>
+            <div class="g" align="center">   The alien burger </div>
+            <div class="b" align="center"> <img src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300"></div>
+            <div class="e" align="center"> <img src="https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300"> </div>
+            <div class="h" align="center"> <img src="https://images.pexels.com/photos/572981/pexels-photo-572981.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Span" title="Another in-line element" width="300">    </div>
+            <div class="c" align="center">
+              <p>
+                750 kCal <br>
+                <span id="allergyInfo">Red peppers</span> extracted from the depths of hell <br>
+                Available as <span id="allergyInfo">Gluten-Free</span> <br>
+              </p> </div>
+            <div class="f" align="center"><p>
+                       Tastes like chicken <br>
+                       Comes with a free pair of boots <br>
+                       300 kCal, no <span id="allergyInfo">lactose</span> <br>
+                    </p> </div>
+            <div class="i" align="center"><p>
+                      Comes with crazy space tentacles <br>
+                      All hail Kang, president of the world <br>
+                      Available as <span id="allergyInfo">Gluten-Free</span> <br>
+                    </p> </div>
+	      </span>
+        </section>
+        <section class="orderInfo">
           <h3> Customer information </h3>
           <p> This is where you provide necessary information </p>
           <form>
@@ -86,7 +80,7 @@
               <input type="radio" name="gender" value="female"> Girly girl<br>
               <input type="radio" name="gender" value="space"> Space creature <br>
               <input type="radio" name="gender" value="space"> None of the above <br>
-              <input type="radio" name="gender" value="space"> One of the above
+              <input type="radio" name="gender" value="space"> All of the above
             </p>
           </form>
           <br>
